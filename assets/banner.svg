@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Animations -->
+    <style>
+      .pulse-circle {
+        animation: pulse 4s ease-in-out infinite alternate;
+      }
+      .float-pill {
+        animation: float 6s ease-in-out infinite alternate;
+      }
+      .float-pill-delayed {
+        animation: float 7s ease-in-out infinite 1s alternate;
+      }
+      .dash-line {
+        stroke-dasharray: 8 8;
+        animation: dash 20s linear infinite;
+      }
+      @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.2; }
+        100% { transform: scale(1.05); opacity: 0.4; }
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-12px); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -100; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="400" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Background Decorative Dynamic Elements (Behind Text) -->
+  <circle cx="200" cy="100" r="180" fill="url(#glowGrad)" class="pulse-circle"/>
+  <circle cx="1000" cy="300" r="220" fill="url(#glowGrad)" class="pulse-circle"/>
+
+  <!-- Connecting Grid / Flow Lines (Background Layer) -->
+  <path d="M 100 320 Q 300 260 500 310 T 900 250 T 1100 280" fill="none" stroke="#475569" stroke-width="1.5" class="dash-line" opacity="0.5"/>
+  <path d="M 150 80 Q 400 140 700 70 T 1050 120" fill="none" stroke="#475569" stroke-width="1.5" class="dash-line" opacity="0.3"/>
+
+  <!-- Decorative Pills (Positioned around borders to avoid title overlapping) -->
+  <g class="float-pill">
+    <rect x="70" y="50" width="160" height="36" rx="18" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" opacity="0.85"/>
+    <text x="150" y="73" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">☁️ Cloud Portals</text>
+  </g>
+
+  <g class="float-pill-delayed">
+    <rect x="970" y="50" width="160" height="36" rx="18" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" opacity="0.85"/>
+    <text x="1050" y="73" fill="#c084fc" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🚀 Customer Success</text>
+  </g>
+
+  <g class="float-pill">
+    <rect x="90" y="310" width="170" height="36" rx="18" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" opacity="0.85"/>
+    <text x="175" y="333" fill="#f472b6" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🔓 Open-Source Tools</text>
+  </g>
+
+  <g class="float-pill-delayed">
+    <rect x="940" y="310" width="180" height="36" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="1.5" opacity="0.85"/>
+    <text x="1030" y="333" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">📊 Product Onboarding</text>
+  </g>
+
+  <!-- FOREGROUND TEXT (High contrast, clearly visible) -->
+  <!-- Top Badge Line -->
+  <rect x="475" y="65" width="250" height="28" rx="14" fill="url(#accentGrad)" opacity="0.9"/>
+  <text x="600" y="84" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">CURATED ECOSYSTEM DIRECTORY</text>
+
+  <!-- Main Title -->
+  <text x="600" y="175" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" text-anchor="middle" letter-spacing="-0.5">
+    Awesome Cloud Customer Onboarding
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="225" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" text-anchor="middle">
+    Implementation Platforms • Client Portals • Open-Source CS Workflows • Product Tours
+  </text>
+
+  <!-- Feature Highlights Row -->
+  <g transform="translate(600, 275)">
+    <!-- Central Divider / Highlight Card -->
+    <rect x="-260" y="0" width="520" height="42" rx="21" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <text x="0" y="26" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" text-anchor="middle">
+      ⭐ Top Enterprise SaaS &amp; Self-Hosted Open-Source Frameworks
+    </text>
+  </g>
+</svg>
