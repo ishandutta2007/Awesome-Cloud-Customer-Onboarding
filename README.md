@@ -65,7 +65,7 @@ Welcome to the ultimate curated directory of **cloud customer onboarding platfor
 
 ## 🔓 Open-Source GitHub Projects
 
-*Sorted by GitHub Stars Count (Descending)* 🌟
+*Sorted by GitHub_Stars_Count (Descending)* 🌟
 
 - **[Novu](https://github.com/novuhq/novu)** [![Stars](https://img.shields.io/github/stars/novuhq/novu?style=social&color=white)](https://github.com/novuhq/novu/stargazers)  
   **Open-source notification infrastructure for customer onboarding**, MIT licensed. **36,000+ stars**. **Multi-channel workflow engine** for onboarding emails, in-app bell notifications, SMS, and webhooks. **Self-hosted Docker & Helm deployments** for privacy-conscious applications. 🔔
@@ -126,7 +126,7 @@ Contributions are welcome! Follow these steps to submit new customer onboarding 
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add/edit** entries in `README.md` maintaining table/list structure and formatting.
-3. 🔗 Include project title, official website/GitHub link, exact star count, license, and brief description.
+3. 🔗 Include project title, official website/GitHub link, exact Stars_Count, license, and brief description.
 4. 🚀 Submit a **Pull Request** with a descriptive summary of your changes.
 
 ---
